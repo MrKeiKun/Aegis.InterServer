@@ -1,0 +1,190 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterServer", "Services\InterServer\InterServer.csproj", "{7B486E48-3C3B-441A-8A39-3015AFC363D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{BD91D1F7-963B-4A10-9868-880020CD9FBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C1463B2A-4F43-45A4-BBC4-A839FF86B5FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappings", "Infrastructure\Mappings\Mappings.csproj", "{FF6F9E53-7AA2-42FB-8C7F-F0E15A50D051}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{140F437D-25FF-47CB-B1FD-FCE38A70ED78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7F72847B-5685-4637-97D4-1D4346BE3A73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F289587D-17EA-4621-93F7-1462678784F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.Contracts", "Data\Repositories.Contracts\Repositories.Contracts.csproj", "{6AC219F2-28CC-46F7-BA4C-8B236A0DE8F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Data\Repositories\Repositories.csproj", "{CDDF4684-AB0F-468F-BED1-8D5414389B83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0217B549-0541-4225-B359-35287C13721E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkTests", "Tests\NetworkTests\NetworkTests.csproj", "{DB44F3CF-256F-465F-B6F9-A7432900B584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration.Contracts", "CrossCutting\Configuration.Contracts\Configuration.Contracts.csproj", "{B636D5B8-70C4-4F87-82C9-E5F4A771C17D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "CrossCutting\Configuration\Configuration.csproj", "{3256FEE6-5638-4C1C-93CC-53BFEFEC66BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationStore.Contracts", "CrossCutting\ConfigurationStore.Contracts\ConfigurationStore.Contracts.csproj", "{92E1BAFB-F8E0-4B54-A25F-3B2DF26BCE97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationStore", "CrossCutting\ConfigurationStore\ConfigurationStore.csproj", "{8BD863F2-ACF7-49AA-BF2C-F0F60F164B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterServer.Contracts", "Services\InterServer.Contracts\InterServer.Contracts.csproj", "{8DAF224D-2223-49EA-A9DF-A46570FF414C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Contracts", "Logic\Management.Contracts\Management.Contracts.csproj", "{FE0934BE-5F1B-42EF-A77F-36B00048C89B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management", "Logic\Management\Management.csproj", "{1E1C5157-8EC9-46F1-B02C-E7A62D9F20DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Network", "CrossCutting\Networking\Network.csproj", "{A5DE1379-1B9F-47CA-AFD0-263FA39E5FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalDataClasses", "CrossCutting\GlobalDataClasses\GlobalDataClasses.csproj", "{4CE051A3-D2C6-431A-8238-C3554E3B18EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B486E48-3C3B-441A-8A39-3015AFC363D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B486E48-3C3B-441A-8A39-3015AFC363D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B486E48-3C3B-441A-8A39-3015AFC363D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B486E48-3C3B-441A-8A39-3015AFC363D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6F9E53-7AA2-42FB-8C7F-F0E15A50D051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6F9E53-7AA2-42FB-8C7F-F0E15A50D051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6F9E53-7AA2-42FB-8C7F-F0E15A50D051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6F9E53-7AA2-42FB-8C7F-F0E15A50D051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC219F2-28CC-46F7-BA4C-8B236A0DE8F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC219F2-28CC-46F7-BA4C-8B236A0DE8F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC219F2-28CC-46F7-BA4C-8B236A0DE8F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC219F2-28CC-46F7-BA4C-8B236A0DE8F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDF4684-AB0F-468F-BED1-8D5414389B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDF4684-AB0F-468F-BED1-8D5414389B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDF4684-AB0F-468F-BED1-8D5414389B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDF4684-AB0F-468F-BED1-8D5414389B83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB44F3CF-256F-465F-B6F9-A7432900B584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB44F3CF-256F-465F-B6F9-A7432900B584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB44F3CF-256F-465F-B6F9-A7432900B584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB44F3CF-256F-465F-B6F9-A7432900B584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B636D5B8-70C4-4F87-82C9-E5F4A771C17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B636D5B8-70C4-4F87-82C9-E5F4A771C17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B636D5B8-70C4-4F87-82C9-E5F4A771C17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B636D5B8-70C4-4F87-82C9-E5F4A771C17D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3256FEE6-5638-4C1C-93CC-53BFEFEC66BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3256FEE6-5638-4C1C-93CC-53BFEFEC66BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3256FEE6-5638-4C1C-93CC-53BFEFEC66BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3256FEE6-5638-4C1C-93CC-53BFEFEC66BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92E1BAFB-F8E0-4B54-A25F-3B2DF26BCE97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E1BAFB-F8E0-4B54-A25F-3B2DF26BCE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E1BAFB-F8E0-4B54-A25F-3B2DF26BCE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E1BAFB-F8E0-4B54-A25F-3B2DF26BCE97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD863F2-ACF7-49AA-BF2C-F0F60F164B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD863F2-ACF7-49AA-BF2C-F0F60F164B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD863F2-ACF7-49AA-BF2C-F0F60F164B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD863F2-ACF7-49AA-BF2C-F0F60F164B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAF224D-2223-49EA-A9DF-A46570FF414C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAF224D-2223-49EA-A9DF-A46570FF414C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAF224D-2223-49EA-A9DF-A46570FF414C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAF224D-2223-49EA-A9DF-A46570FF414C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0934BE-5F1B-42EF-A77F-36B00048C89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0934BE-5F1B-42EF-A77F-36B00048C89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0934BE-5F1B-42EF-A77F-36B00048C89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0934BE-5F1B-42EF-A77F-36B00048C89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E1C5157-8EC9-46F1-B02C-E7A62D9F20DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1C5157-8EC9-46F1-B02C-E7A62D9F20DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1C5157-8EC9-46F1-B02C-E7A62D9F20DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1C5157-8EC9-46F1-B02C-E7A62D9F20DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5DE1379-1B9F-47CA-AFD0-263FA39E5FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5DE1379-1B9F-47CA-AFD0-263FA39E5FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5DE1379-1B9F-47CA-AFD0-263FA39E5FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5DE1379-1B9F-47CA-AFD0-263FA39E5FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE051A3-D2C6-431A-8238-C3554E3B18EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE051A3-D2C6-431A-8238-C3554E3B18EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE051A3-D2C6-431A-8238-C3554E3B18EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE051A3-D2C6-431A-8238-C3554E3B18EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B486E48-3C3B-441A-8A39-3015AFC363D4} = {F289587D-17EA-4621-93F7-1462678784F1}
+		{FF6F9E53-7AA2-42FB-8C7F-F0E15A50D051} = {C1463B2A-4F43-45A4-BBC4-A839FF86B5FA}
+		{6AC219F2-28CC-46F7-BA4C-8B236A0DE8F5} = {7F72847B-5685-4637-97D4-1D4346BE3A73}
+		{CDDF4684-AB0F-468F-BED1-8D5414389B83} = {7F72847B-5685-4637-97D4-1D4346BE3A73}
+		{DB44F3CF-256F-465F-B6F9-A7432900B584} = {0217B549-0541-4225-B359-35287C13721E}
+		{B636D5B8-70C4-4F87-82C9-E5F4A771C17D} = {140F437D-25FF-47CB-B1FD-FCE38A70ED78}
+		{3256FEE6-5638-4C1C-93CC-53BFEFEC66BF} = {140F437D-25FF-47CB-B1FD-FCE38A70ED78}
+		{92E1BAFB-F8E0-4B54-A25F-3B2DF26BCE97} = {140F437D-25FF-47CB-B1FD-FCE38A70ED78}
+		{8BD863F2-ACF7-49AA-BF2C-F0F60F164B58} = {140F437D-25FF-47CB-B1FD-FCE38A70ED78}
+		{8DAF224D-2223-49EA-A9DF-A46570FF414C} = {F289587D-17EA-4621-93F7-1462678784F1}
+		{FE0934BE-5F1B-42EF-A77F-36B00048C89B} = {BD91D1F7-963B-4A10-9868-880020CD9FBD}
+		{1E1C5157-8EC9-46F1-B02C-E7A62D9F20DA} = {BD91D1F7-963B-4A10-9868-880020CD9FBD}
+		{A5DE1379-1B9F-47CA-AFD0-263FA39E5FE3} = {140F437D-25FF-47CB-B1FD-FCE38A70ED78}
+		{4CE051A3-D2C6-431A-8238-C3554E3B18EF} = {140F437D-25FF-47CB-B1FD-FCE38A70ED78}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mrdiablo.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CrossCutting\\Configuration.Contracts\\Configuration.Contracts.csproj
+		SccProjectTopLevelParentUniqueName1 = Aegis.InterServer.sln
+		SccProjectName1 = CrossCutting/Configuration.Contracts
+		SccLocalPath1 = CrossCutting\\Configuration.Contracts
+		SccProjectUniqueName2 = CrossCutting\\Configuration\\Configuration.csproj
+		SccProjectTopLevelParentUniqueName2 = Aegis.InterServer.sln
+		SccProjectName2 = CrossCutting/Configuration
+		SccLocalPath2 = CrossCutting\\Configuration
+		SccProjectUniqueName3 = CrossCutting\\ConfigurationStore.Contracts\\ConfigurationStore.Contracts.csproj
+		SccProjectTopLevelParentUniqueName3 = Aegis.InterServer.sln
+		SccProjectName3 = CrossCutting/ConfigurationStore.Contracts
+		SccLocalPath3 = CrossCutting\\ConfigurationStore.Contracts
+		SccProjectUniqueName4 = CrossCutting\\ConfigurationStore\\ConfigurationStore.csproj
+		SccProjectTopLevelParentUniqueName4 = Aegis.InterServer.sln
+		SccProjectName4 = CrossCutting/ConfigurationStore
+		SccLocalPath4 = CrossCutting\\ConfigurationStore
+		SccProjectUniqueName5 = Data\\Repositories.Contracts\\Repositories.Contracts.csproj
+		SccProjectTopLevelParentUniqueName5 = Aegis.InterServer.sln
+		SccProjectName5 = Data/Repositories.Contracts
+		SccLocalPath5 = Data\\Repositories.Contracts
+		SccProjectUniqueName6 = Data\\Repositories\\Repositories.csproj
+		SccProjectTopLevelParentUniqueName6 = Aegis.InterServer.sln
+		SccProjectName6 = Data/Repositories
+		SccLocalPath6 = Data\\Repositories
+		SccProjectUniqueName7 = Infrastructure\\Mappings\\Mappings.csproj
+		SccProjectTopLevelParentUniqueName7 = Aegis.InterServer.sln
+		SccProjectName7 = Infrastructure/Mappings
+		SccLocalPath7 = Infrastructure\\Mappings
+		SccProjectUniqueName8 = Services\\InterServer\\InterServer.csproj
+		SccProjectTopLevelParentUniqueName8 = Aegis.InterServer.sln
+		SccProjectName8 = Services/InterServer
+		SccLocalPath8 = Services\\InterServer
+		SccProjectUniqueName9 = Tests\\NetworkTests\\NetworkTests.csproj
+		SccProjectTopLevelParentUniqueName9 = Aegis.InterServer.sln
+		SccProjectName9 = Tests/NetworkTests
+		SccLocalPath9 = Tests\\NetworkTests
+		SccProjectUniqueName10 = Services\\InterServer.Contracts\\InterServer.Contracts.csproj
+		SccProjectTopLevelParentUniqueName10 = Aegis.InterServer.sln
+		SccProjectName10 = Services/InterServer.Contracts
+		SccLocalPath10 = Services\\InterServer.Contracts
+		SccProjectUniqueName11 = Logic\\Management.Contracts\\Management.Contracts.csproj
+		SccProjectTopLevelParentUniqueName11 = Aegis.InterServer.sln
+		SccProjectName11 = Logic/Management.Contracts
+		SccLocalPath11 = Logic\\Management.Contracts
+		SccProjectUniqueName12 = Logic\\Management\\Management.csproj
+		SccProjectTopLevelParentUniqueName12 = Aegis.InterServer.sln
+		SccProjectName12 = Logic/Management
+		SccLocalPath12 = Logic\\Management
+		SccProjectUniqueName13 = CrossCutting\\Networking\\Network.csproj
+		SccProjectTopLevelParentUniqueName13 = Aegis.InterServer.sln
+		SccProjectName13 = CrossCutting/Networking
+		SccLocalPath13 = CrossCutting\\Networking
+		SccProjectUniqueName14 = CrossCutting\\GlobalDataClasses\\GlobalDataClasses.csproj
+		SccProjectTopLevelParentUniqueName14 = Aegis.InterServer.sln
+		SccProjectName14 = CrossCutting/GlobalDataClasses
+		SccLocalPath14 = CrossCutting\\GlobalDataClasses
+	EndGlobalSection
+EndGlobal

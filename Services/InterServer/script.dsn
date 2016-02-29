@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=SQL Server
+UID=script
+Network=DBMSSOCN
+DATABASE=sakray_script
+APP=Microsoft¢ç Windows¢ç Operating System
+SERVER=.

@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=SQL Server
+UID=ipinfo
+Network=DBMSSOCN
+DATABASE=sakray_ipinfo
+APP=Microsoft¢ç Windows¢ç Operating System
+SERVER=.

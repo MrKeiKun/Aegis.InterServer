@@ -1,0 +1,9 @@
+*.user
+*.vspscc
+Config.json
+bin
+obj
+.vs
+*.ncrunchproject
+*.ncrunchsolution
+packages

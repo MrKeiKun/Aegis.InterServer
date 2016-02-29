@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=SQL Server
+UID=globalinfo
+Network=DBMSSOCN
+DATABASE=sakray_globalinfo
+APP=Microsoft¢ç Windows¢ç Operating System
+SERVER=.

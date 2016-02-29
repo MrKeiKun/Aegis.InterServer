@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=SQL Server
+UID=loger
+Network=DBMSSOCN
+DATABASE=sakray_itemlog
+APP=Microsoft¢ç Windows¢ç Operating System
+SERVER=.

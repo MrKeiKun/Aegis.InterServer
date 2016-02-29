@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=SQL Server
+UID=character
+Network=DBMSSOCN
+DATABASE=sakray_character
+APP=Microsoft¢ç Windows¢ç Operating System
+SERVER=.

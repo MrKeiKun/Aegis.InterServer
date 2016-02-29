@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5DE1379-1B9F-47CA-AFD0-263FA39E5FE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aegis.CrossCutting.Network</RootNamespace>
+    <AssemblyName>Network</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.4\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\BufferException.cs" />
+    <Compile Include="Classes\CHARINFO_IN_GROUP.cs" />
+    <Compile Include="Classes\Command.cs" />
+    <Compile Include="Classes\CommandAttribute.cs" />
+    <Compile Include="Classes\GROUP_INFO.cs" />
+    <Compile Include="Classes\GROUP_MEMBER.cs" />
+    <Compile Include="Classes\GUILDALLYINFO.cs" />
+    <Compile Include="Classes\GUILDBANISHINFO.cs" />
+    <Compile Include="Classes\GUILDINFO.cs" />
+    <Compile Include="Classes\GUILDMINFO.cs" />
+    <Compile Include="Classes\GUILDMPOSITION.cs" />
+    <Compile Include="Classes\GUILDSKILL.cs" />
+    <Compile Include="Classes\GUILD_MEMBER_INFO.cs" />
+    <Compile Include="Classes\PacketBuffer.cs" />
+    <Compile Include="Classes\PacketLengthManager.cs" />
+    <Compile Include="Classes\PARTY_BOOKING_AD_INFO.cs" />
+    <Compile Include="Classes\PARTY_BOOKING_DETAIL.cs" />
+    <Compile Include="Interfaces\IClient.cs" />
+    <Compile Include="Interfaces\IConnection.cs" />
+    <Compile Include="Packets\IZ\IZ_ACK_BAN_GUILD.cs" />
+    <Compile Include="Packets\IZ\IZ_ACK_CHANGE_MEMBERPOS.cs" />
+    <Compile Include="Packets\IZ\IZ_ACK_GUILD_POSITION_INFO.cs" />
+    <Compile Include="Packets\IZ\IZ_ACK_LEAVE_GUILD.cs" />
+    <Compile Include="Packets\IZ\IZ_ACK_LOGON.cs" />
+    <Compile Include="Packets\IZ\IZ_ACK_MAKE_GROUP.cs" />
+    <Compile Include="Packets\IZ\IZ_ACK_REQ_JOIN_GUILD.cs" />
+    <Compile Include="Packets\IZ\IZ_ACK_WHISPER.cs" />
+    <Compile Include="Packets\IZ\IZ_ADD_EXP.cs" />
+    <Compile Include="Packets\IZ\IZ_ADD_MEMBER_TO_GROUP2.cs" />
+    <Compile Include="Packets\IZ\IZ_AUTH_ACK.cs" />
+    <Compile Include="Packets\IZ\IZ_BROADCAST.cs" />
+    <Compile Include="Packets\IZ\IZ_BROADCASTING_SPECIAL_ITEM_OBTAIN.cs" />
+    <Compile Include="Packets\IZ\IZ_CHAT_PARTY.cs" />
+    <Compile Include="Packets\IZ\IZ_DELETE_MEMBER_FROM_GROUP.cs" />
+    <Compile Include="Packets\IZ\IZ_DISCONNECT_CHARACTER.cs" />
+    <Compile Include="Packets\IZ\IZ_DIVORCE.cs" />
+    <Compile Include="Packets\IZ\IZ_FREE_GUILD.cs" />
+    <Compile Include="Packets\IZ\IZ_GET_GUILD_EMBLEM_IMG.cs" />
+    <Compile Include="Packets\IZ\IZ_GROUP_LIST.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILDINFO_TOD.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_ALLYINFO_TOD.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_BANISHINFO_TOD.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_CHANGEMAXUSER.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_CHANGEOWNER_AGIT.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_CHAT.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_MAP_CHANGE.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_MEMBERINFO_TOD.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_MEMBER_ADD.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_MPOSITION_TOD.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_NOTICE.cs" />
+    <Compile Include="Packets\IZ\IZ_GUILD_NOTIFYSKILLDATA.cs" />
+    <Compile Include="Packets\IZ\IZ_INSTANTMAP_ADD3.cs" />
+    <Compile Include="Packets\IZ\IZ_INSTANTMAP_CREATE_REQ.cs" />
+    <Compile Include="Packets\IZ\IZ_INSTANTMAP_PLAYER_ENTER3.cs" />
+    <Compile Include="Packets\IZ\IZ_INSTANTMAP_REMOVE3.cs" />
+    <Compile Include="Packets\IZ\IZ_INSTNATMAP_DESTROY.cs" />
+    <Compile Include="Packets\IZ\IZ_LEAVE_GROUP.cs" />
+    <Compile Include="Packets\IZ\IZ_MEMORIALDUNGEON_INFO2.cs" />
+    <Compile Include="Packets\IZ\IZ_MEMORIALDUNGEON_MSG2.cs" />
+    <Compile Include="Packets\IZ\IZ_MEMORIALDUNGEON_NOTIFY.cs" />
+    <Compile Include="Packets\IZ\IZ_MEMORIALDUNGEON_SUBSCRIPTION_INFO2.cs" />
+    <Compile Include="Packets\IZ\IZ_MEMORIALDUNGEON_SUBSCRIPTION_NOTIFY.cs" />
+    <Compile Include="Packets\IZ\IZ_MEMORIALDUNGEON_SYNC2.cs" />
+    <Compile Include="Packets\IZ\IZ_MEMORIALDUNGEON_VISA.cs" />
+    <Compile Include="Packets\IZ\IZ_MOVE.cs" />
+    <Compile Include="Packets\IZ\IZ_NOTIFY_MAKERRANK.cs" />
+    <Compile Include="Packets\IZ\IZ_PARTY_BOOKING_NOTIFY_DELETE.cs" />
+    <Compile Include="Packets\IZ\IZ_PARTY_BOOKING_NOTIFY_INSERT.cs" />
+    <Compile Include="Packets\IZ\IZ_PARTY_BOOKING_NOTIFY_UPDATE.cs" />
+    <Compile Include="Packets\IZ\IZ_PING_LIVE.cs" />
+    <Compile Include="Packets\IZ\IZ_REQ_DISORGANIZE_GUILD_RESULT.cs" />
+    <Compile Include="Packets\IZ\IZ_REQ_EDIT_EXP.cs" />
+    <Compile Include="Packets\IZ\IZ_REQ_JOIN_GUILD2.cs" />
+    <Compile Include="Packets\IZ\IZ_RESULT_MAKE_GUILD.cs" />
+    <Compile Include="Packets\IZ\IZ_UPDATE_CHARGDID.cs" />
+    <Compile Include="Packets\IZ\IZ_UPDATE_CHARSTAT.cs" />
+    <Compile Include="Packets\IZ\IZ_WHISPER.cs" />
+    <Compile Include="Packets\ZI\ZI_ACK_CHK_PROCESSTIME.cs" />
+    <Compile Include="Packets\ZI\ZI_ACK_WHISPER.cs" />
+    <Compile Include="Packets\ZI\ZI_ADD_EXP.cs" />
+    <Compile Include="Packets\ZI\ZI_BROADCASTING_SPECIAL_ITEM_OBTAIN.cs" />
+    <Compile Include="Packets\ZI\ZI_CHAR_LEVEL_UP.cs" />
+    <Compile Include="Packets\ZI\ZI_DIVORCE.cs" />
+    <Compile Include="Packets\PacketBase.cs" />
+    <Compile Include="Packets\PacketVarSize.cs" />
+    <Compile Include="Packets\ZI\ZI_AUTH_REQ.cs" />
+    <Compile Include="Packets\ZI\ZI_BROADCAST.cs" />
+    <Compile Include="Packets\ZI\ZI_CHAT_PARTY.cs" />
+    <Compile Include="Packets\ZI\ZI_EXIT.cs" />
+    <Compile Include="Packets\ZI\ZI_GDSKILL_UPDATE.cs" />
+    <Compile Include="Packets\ZI\ZI_GRID_UPDATE.cs" />
+    <Compile Include="Packets\ZI\ZI_GROUPINFO_CHANGE_V2.cs" />
+    <Compile Include="Packets\ZI\ZI_GUILD_CHANGEMAXUSER.cs" />
+    <Compile Include="Packets\ZI\ZI_GUILD_CHANGEOWNER_AGIT.cs" />
+    <Compile Include="Packets\ZI\ZI_GUILD_CHAT.cs" />
+    <Compile Include="Packets\ZI\ZI_GUILD_NOTICE.cs" />
+    <Compile Include="Packets\ZI\ZI_INSTANTMAP_ALLOW.cs" />
+    <Compile Include="Packets\ZI\ZI_INSTANTMAP_CREATE_RES.cs" />
+    <Compile Include="Packets\ZI\ZI_JOIN_GUILD.cs" />
+    <Compile Include="Packets\ZI\ZI_LIST_JOIN_GUILD_CHECK_GID.cs" />
+    <Compile Include="Packets\ZI\ZI_LIST_JOIN_GUILD_INSERT_GID.cs" />
+    <Compile Include="Packets\ZI\ZI_LOGON.cs" />
+    <Compile Include="Packets\ZI\ZI_MAKE_GROUP2.cs" />
+    <Compile Include="Packets\ZI\ZI_MAPMOVE.cs" />
+    <Compile Include="Packets\ZI\ZI_MEMORIALDUNGEON_SUBSCRIPTION2.cs" />
+    <Compile Include="Packets\ZI\ZI_MEMORIALDUNGEON_VISA.cs" />
+    <Compile Include="Packets\ZI\ZI_MOVE.cs" />
+    <Compile Include="Packets\ZI\ZI_MOVE_2.cs" />
+    <Compile Include="Packets\ZI\ZI_MOVE_SERVER.cs" />
+    <Compile Include="Packets\ZI\ZI_PARTY_BOOKING_NOTIFY_DELETE.cs" />
+    <Compile Include="Packets\ZI\ZI_PARTY_BOOKING_NOTIFY_INSERT.cs" />
+    <Compile Include="Packets\ZI\ZI_PARTY_BOOKING_NOTIFY_UPDATE.cs" />
+    <Compile Include="Packets\ZI\ZI_PING_LIVE.cs" />
+    <Compile Include="Packets\ZI\ZI_REGISTER_GUILD_EMBLEM_IMG.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_BAN_GUILD.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_CHANGE_MEMBERPOS.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_DISORGANIZE_GUILD.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_GUILD_POSITION_INFO.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_JOIN_CLAN.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_JOIN_GUILD.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_JOIN_GUILD2.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_LEAVE_GROUP.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_LEAVE_GUILD.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_MAKE_GUILD.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_USER_CLANINFO.cs" />
+    <Compile Include="Packets\ZI\ZI_REQ_USER_COUNT.cs" />
+    <Compile Include="Packets\ZI\ZI_STATEINFO.cs" />
+    <Compile Include="Packets\ZI\ZI_UPDATE_MAKERRANK.cs" />
+    <Compile Include="Packets\ZI\ZI_VERSION.cs" />
+    <Compile Include="Packets\ZI\ZI_WHISPER.cs" />
+    <Compile Include="PACKET_COMMAND.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalDataClasses\GlobalDataClasses.csproj">
+      <Project>{4CE051A3-D2C6-431A-8238-C3554E3B18EF}</Project>
+      <Name>GlobalDataClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
